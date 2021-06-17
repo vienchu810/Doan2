@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="fill_horizontal"
+    android:background="@drawable/bg_form">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="143dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_shopping_cart_black_24dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="Hóa Đơn Nhập "
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:text="Mã HD"
+            android:textColor="#FF1744"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/mahdn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:text="Người Nhập"
+            android:textColor="#FF1744"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/tvNgNhap"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20dp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:text="Địa Chỉ Hàng"
+            android:textColor="#FF1744"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/tvdichi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="5"
+            android:text="Ngày mua"
+            android:textColor="#FF1744"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/tvngay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="259dp">
+
+        <LinearLayout
+            android:layout_width="303dp"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/lvhoadonnhap"
+                android:layout_width="293dp"
+                android:layout_height="302dp">
+
+            </ListView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="100dp"
+
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/sanphammoi"
+                android:background="@drawable/botron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thuốc" />
+            <Button
+                android:id="@+id/update"
+                android:background="@drawable/botron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chọn" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thành tiền :       "
+            android:textColor="#F00"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/thanhtoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/huyhdn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botron"
+            android:layout_weight="1"
+            android:text="Hủy bỏ" />
+
+        <Button
+            android:id="@+id/tvnhap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/botron"
+            android:layout_weight="1"
+            android:text="Nhập Hàng" />
+    </LinearLayout>
+</LinearLayout>

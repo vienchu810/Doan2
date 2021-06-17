@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_form"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="131dp"
+            android:layout_height="137dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/thuoc1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="Thông tin:"
+                android:textColor="#FF1717"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Mã SP:"
+                    android:textColor="#FF1744"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/masp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp"
+                    android:text=""
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Tên Thuốc:"
+                    android:textColor="#FF1744"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tensp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp"
+                    android:text=""
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Số lượng:"
+                    android:textColor="#FF1744"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/soluong"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp"
+                    android:text=""
+                    android:textColor="#000000" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp"
+                    android:text="Gía thành:"
+                    android:textColor="#FF1744"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/giathanh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="6dp"
+                    android:text=""
+                    android:textColor="#000000" />
+            </TableRow>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="5dp"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Thông tin thuốc"
+        android:textStyle="bold"
+        android:textColor="#FF1744"
+        android:textSize="18dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="492dp">
+
+        <TextView
+            android:id="@+id/dacdiem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Giới thiệu, đặc diêm..."
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+
+    </ScrollView>
+
+
+</LinearLayout>
+

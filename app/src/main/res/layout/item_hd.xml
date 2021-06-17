@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageView
+
+
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/thuoc1"
+
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvmasp"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="textview"
+                android:textColor="#CC003A"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtsoluong"
+                android:layout_width="357dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="textview"
+                android:textColor="#009688"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtgiatien"
+                android:layout_width="341dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="textview" />
+        </TableRow>
+
+    </LinearLayout>
+
+</LinearLayout>

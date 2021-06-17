@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chonhoadon"
+    android:background="@drawable/bg_form"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="231dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Hóa Đơn"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="171dp"
+            android:layout_height="165dp"
+            android:layout_gravity="center"
+            android:background="@drawable/thuoc1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="145dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/chonhoadonnhap"
+            android:layout_width="159dp"
+            android:text="Hóa đơn nhập"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:background="@drawable/botron"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp" />
+
+
+        <Button
+            android:id="@+id/chonhoadonban"
+            android:layout_width="157dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/botron"
+            android:text="Hóa đơn bán"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_form"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarmanhinh"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_marginTop="30dp">
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo"
+                app:backgroundTint="#F44336" />
+
+
+            <EditText
+                android:id="@+id/edtimkiem"
+                android:layout_width="230dp"
+                android:layout_height="30dp"
+                android:background="@drawable/botron"
+                android:text="" />
+
+            <ImageButton
+                android:id="@+id/bttimkiem"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_search_black_24dp"
+                app:backgroundTint="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/giohangbt"
+                android:layout_width="35dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_shopping_cart_black_24dp"
+                app:backgroundTint="#FFFFFF" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="#FAEFEFEB"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <androidx.core.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="92dp"
+                                android:background="@drawable/bg_bo"></ImageView>
+
+                            <ViewFlipper
+                                android:id="@+id/viewflipper"
+                                android:layout_width="match_parent"
+                                android:layout_height="150dp"
+                             >
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="386dp"
+                                    android:layout_height="149dp"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    app:cardCornerRadius="20dp">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:cropToPadding="true"
+                                        android:radius="20dp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/thuoc1"></ImageView>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="386dp"
+                                    android:layout_height="149dp"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    app:cardCornerRadius="20dp">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:cropToPadding="true"
+                                        android:radius="20dp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/thuoc2"></ImageView>
+
+                                </androidx.cardview.widget.CardView>
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="386dp"
+                                    android:layout_height="149dp"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    app:cardCornerRadius="20dp">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:cropToPadding="true"
+                                        android:radius="20dp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/thuoc3"></ImageView>
+
+                                </androidx.cardview.widget.CardView>
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="386dp"
+                                    android:layout_height="149dp"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    app:cardCornerRadius="20dp">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:cropToPadding="true"
+                                        android:radius="20dp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/thuoc4"></ImageView>
+
+                                </androidx.cardview.widget.CardView>
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="386dp"
+                                    android:layout_height="149dp"
+                                    android:layout_gravity="center"
+                                    android:orientation="vertical"
+                                    app:cardCornerRadius="20dp">
+
+                                    <ImageView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:cropToPadding="true"
+                                        android:radius="20dp"
+                                        android:scaleType="centerCrop"
+                                        android:src="@drawable/thuoc4"></ImageView>
+
+                                </androidx.cardview.widget.CardView>
+
+
+                            </ViewFlipper>
+
+
+                        </FrameLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="396dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/botron"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+
+                                android:background="#00000000"
+                                android:text="Danh Sách Thuốc"
+                                android:textColor="#000000"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <androidx.coordinatorlayout.widget.CoordinatorLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent">
+
+                                <ListView
+                                    android:id="@+id/listviewmanhinhchinh"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="600dp">
+
+                                </ListView>
+
+                                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                    android:id="@+id/themsp"
+                                    android:layout_width="66dp"
+                                    android:layout_height="65dp"
+                                    android:layout_gravity="bottom|end"
+                                    android:layout_margin="20dp"
+                                    android:background="@drawable/botron"
+                                    android:src="@android:drawable/ic_input_add"
+                                    app:backgroundTint="#ffffff"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+                            </androidx.coordinatorlayout.widget.CoordinatorLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.core.widget.NestedScrollView>
+            </FrameLayout>
+        </LinearLayout>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+

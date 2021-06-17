@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_form"
+    android:orientation="vertical"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Cửa Hàng Thuốc"
+            android:textColor="#ff0000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Phụng Công - Văn Giang - Hưng Yên"
+            android:textColor="#000000" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="0979951954"
+            android:textColor="#000000" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="108dp"
+            android:src="@drawable/thuoc1" />
+    </LinearLayout>
+    <TextView
+        android:text="Thống Kê"
+        android:gravity="center"
+        android:background="@drawable/botron"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Từ ngày:"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/txtdate1"
+                android:layout_width="202dp"
+                android:layout_height="34dp"
+                android:gravity="center"
+                android:text="1/5/2018"
+                android:textColor="#FF0000"
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:id="@+id/btn_date1"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/botron"
+                android:src="@drawable/ic_insert_invitation_black_24dp"
+                android:text="chọn ngày"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đến ngày:"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/txtdate2"
+                android:layout_width="189dp"
+                android:layout_height="34dp"
+                android:gravity="center"
+                android:text="1/5/2018"
+                android:textColor="#FF0000"
+                android:textSize="20dp" />
+
+            <ImageButton
+                android:id="@+id/btn_date2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/botron"
+                android:src="@drawable/ic_insert_invitation_black_24dp"
+                android:text="chọn ngày"
+
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+
+                android:text="Tổng tiền thu:"
+                android:textColor="#000000"
+                android:textSize="20dp"
+
+                />
+
+            <TextView
+                android:id="@+id/doanhthu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Tổng"
+                android:textColor="#FF0000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="164dp"
+            android:layout_height="37dp"
+            android:background="@drawable/botron"
+            android:onClick="Tongthu"
+            android:text="Tính tổng:"
+            android:textColor="#000000"
+
+
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:text="Tổng tiền nhập "
+                android:textColor="#000000"
+                android:textSize="20dp"
+
+                />
+
+            <TextView
+                android:id="@+id/tvTongNhap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Tổng"
+                android:textColor="#FF0000"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="152dp"
+            android:layout_height="34dp"
+            android:background="@drawable/botron"
+            android:onClick="Tongnhap"
+            android:text="Tính tổng:"
+            android:textColor="#000000"
+
+
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="70dp">
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
